@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de moedas</title>
+    <link rel="stylesheet" href="style.css"> <!--Folha de estilo, estiliza a pagina-->
+</head>
+<body>
+<main>
+    <h1>Conversor de BRL para USD</h1> <!--Titulo exibido na pagina-->
+    <form action="service.php" method="get"> <!--Ocorre uma ação chamando o php-->
+        <label for="din">Quantos R$ você tem?</label> <!--Gera um campo para inserir numeros-->
+            <br>
+        <input type="number" name="din" id="din" step="0.01" required><br> <!--Tipo de caracteres podemos preencher-->
+        
+        <input type="submit" value="Converter"> <!--Envia os valores preenchidos para o php-->
+    </form>
+</main>
+</body>
+</html>
